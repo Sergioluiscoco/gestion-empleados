@@ -1,0 +1,469 @@
+/* Paleta de colores moderna */
+
+:root {
+    --primary: #000000;
+    --primary-hover: #004c99;
+    --success: #28a745;
+    --error: #ffffff;
+    --bg: #f4f6f8;
+    --text: #333;
+    --white: #ffffff;
+    --border: #ddd;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* General */
+
+body {
+    background-color: var(--bg);
+    background-image: url('images/fondoModoClaro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h1 span { display: block; }
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==============================
+   Ajustes de .actions en index.jsp
+   ============================== */
+
+/* Contenedor de acciones */
+.actions {
+    width: 90%;                 /* mismo ancho que la tabla */
+    margin: 40px auto 0;        /* centrado horizontal y margen superior */
+    display: flex;
+    align-items: center;        /* alinea verticalmente h2 y botones */
+    justify-content: center;
+    gap: 12px;                  /* espacio entre elementos */
+    flex-wrap: wrap;            /* en pantallas estrechas saltan a la siguiente línea */
+    align-content: center;
+
+}
+
+/* Título de la sección (h2) */
+.actions h2 {
+    margin: 0;                  /* elimina márgenes por defecto */
+    font-size: 1.1rem;          /* ajusta tamaño */
+    font-weight: 600;           /* seminegrita */
+    color: var(--primary);      /* color principal */
+    flex: 0 0 auto;             /* no crece ni encoge */
+}
+
+/* Botones dentro de .actions */
+.actions .button {
+    flex: 0 0 auto;             /* ancho según contenido */
+    padding: 8px 20px;          /* padding vertical y horizontal */
+    font-size: 0.9rem;          /* un poco más pequeño */
+    border: 2px solid var(--primary-hover);
+    border-radius: 4px;
+    background-color: var(--primary);
+    color: var(--white);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover / foco de botones */
+.actions .button:hover,
+.actions .button:focus {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    outline: none;
+}
+.actions .back-button:hover,
+.actions .back-button:focus {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    outline: none;
+}
+
+/* Si quieres separar aún más los dos grupos de acciones */
+.actions + .actions {
+    margin-top: 44px;
+}
+
+/* Barra de navegación superior */
+
+.navbar {
+    width: 100%;
+    background-color: var(--primary);
+    border-bottom: 10px solid black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.navbar a {
+    color: var(--white);
+    margin: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    border-radius: 6px;
+    padding: 10px 10px;
+    border: none;
+}
+
+.navbar a:hover {
+    display: flex;
+    color: var(--white);
+    background-color: rgba(83, 234, 241, 0.35);
+    border-radius: 6px;
+    padding: 10px 10px;
+}
+
+/* Input de búsqueda */
+
+input#searchInput {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de acciones alineadas con la tabla */
+.actions {
+    width: 90%;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.actions .button{
+    border: 3px solid black;
+}
+.actions .back-button{
+    border: 3px solid black;
+}
+
+.actions .button:hover {
+    background-color: var(--success);
+    color: #121212;
+}
+
+.actions .back-button:hover {
+    background-color: red;
+    color: #121212;
+}
+
+/* Tablas */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 12px 16px;
+    text-align: left;
+}
+
+th {
+    background: var(--primary);
+    color: var(--white);
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Formularios Modo Claro */
+
+.form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: var(--white);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+
+/* Botones y enlaces */
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a, button {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button, .back-button {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    border: none;
+    text-align: center;
+}
+
+.button:hover, .back-button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Ajuste botones del formulario */
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-buttons input[type="submit"],
+.form-buttons button{
+    flex: 0 0 auto;
+    font-family: "Arial Nova", serif;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.form-buttons .back-button {
+    flex: 0 0 auto;
+    font-family: "Arial Nova", serif;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.form-buttons .button:hover {
+    background-color: var(--success);
+}
+
+.form-buttons .back-button:hover {
+    background-color: red;
+    color: var(--white);
+}
+
+
+
+
+/* Modo oscuro general */
+
+body.dark-mode {
+    background-color: var(--bg);
+    background-image: url('images/fondoModoOscuro.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+
+body.dark-mode h1{
+    color: var(--white);
+}
+body.dark-mode nav {
+    background: white;
+}
+body.dark-mode a {
+    text-decoration: none;
+    color: var(--white);
+}
+body.dark-mode a:hover{
+    color: red;
+}
+
+body.dark-mode .navbar a {
+    color: black;
+}
+
+body.dark-mode .navbar a:hover {
+    color: black;
+    background-color: lightskyblue;
+}
+
+body.dark-mode .navbar #toggleTheme {
+    background:none;
+    color: black;
+    border: none;
+}
+body.dark-mode .navbar #toggleTheme:hover {
+    background-color: darkgrey;
+}
+
+body.dark-mode label {
+    color: #eee;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #1b1a1a;
+    color: #fff;
+    border: 2px solid #ffffff;
+}
+
+body.dark-mode table {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+body.dark-mode th {
+    background-color: #333;
+    color: #fff;
+}
+body.dark-mode th:hover {
+    background-color: cadetblue;
+}
+body.dark-mode td {
+    border-color: #444;
+}
+body.dark-mode td:hover {
+    background-color: cadetblue;
+}
+body.dark-mode input[type="submit"],
+body.dark-mode .button, .dark-mode .back-button {
+    background-color: #e3e0e0;
+    color: #000000;
+    border: 2px solid #121212;
+}
+body.back-button:hover {
+    background-color: var(--primary-hover);
+}
+
+
+
+/*Ajustes formulario Modo Oscuro */
+
+.dark-mode .form-wrapper {
+    background-color: #1e1e1e;       /* fondo oscuro del bloque */
+    border: black 2px solid;
+}
+
+.dark-mode .form-wrapper label {
+    color: #ddd;                     /* etiquetas claras */
+}
+
+.dark-mode .form-wrapper input,
+.dark-mode .form-wrapper select,
+.dark-mode .form-wrapper textarea {
+    background-color: #2a2a2a;       /* fondo oscuro de campos */
+    color: #eee;                     /* texto claro */
+    border: 1px solid #444;         /* borde un poco más suave */
+}
+
+.dark-mode .form-wrapper input::placeholder {
+    color: #aaa;                     /* placeholder más tenue */
+}
+
+
+
+/* Toast */
+
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 6px solid var(--success);
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.toast.error {
+    background-color: var(--error);
+    border-left-color: var(--error);
+}
+
+#cerrarToast {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
