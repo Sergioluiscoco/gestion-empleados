@@ -1,3 +1,4 @@
+
 package com.gestionempleados.gestionempleados.models;
 
 public class Empleados {
