@@ -46,6 +46,7 @@
     </div>
   </form>
 </div>
+<jsp:include page="footer/footer.jsp" />
 <script>
   /* Botones inferiores */
   const toggleBtn = document.getElementById("toggleTheme");

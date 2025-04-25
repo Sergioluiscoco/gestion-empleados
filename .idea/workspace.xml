@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31f11386-2c69-4264-a0d8-12bceea9c0cb" name="Changes" comment="" />
+    <list default="true" id="31f11386-2c69-4264-a0d8-12bceea9c0cb" name="Changes" comment="feat: añadir footer común a todas las JSPs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empleados-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empleados-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/empresas-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/empresas-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/list-empleados.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list-empleados.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/list-empresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list-empresas.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -67,6 +75,7 @@
     "Tomcat Server.Tomcat 10.1.401.executor": "Run",
     "Tomcat Server.index.jsp.executor": "Run",
     "Tomcat Server.list-empresas.jsp.executor": "Run",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Sergi/Desktop/INTELIJ/gestionEmpleados/gestionEmpleados/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -231,7 +240,55 @@
       <option name="project" value="LOCAL" />
       <updated>1745532610077</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" Uso de ramas para separar el desarrollo de la versión principal">
+      <option name="closed" value="true" />
+      <created>1745576681578</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745576681578</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: crear rama dev para desarrollo de nuevas funcionalidades">
+      <option name="closed" value="true" />
+      <created>1745576852285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745576852285</updated>
+    </task>
+    <task id="LOCAL-00004" summary=" chore: marcar archivos generados en .gitattributes">
+      <option name="closed" value="true" />
+      <created>1745577988993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745577988993</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docs: añadir diagrama ER de la base de datos">
+      <option name="closed" value="true" />
+      <created>1745578401161</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745578401161</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: añadir footer común a todas las JSPs">
+      <option name="closed" value="true" />
+      <created>1745580960303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745580960303</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Incluir footer en la pagina principal index.jsp">
+      <option name="closed" value="true" />
+      <created>1745581062259</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745581062259</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +322,14 @@
       <path value="$PROJECT_DIR$/.idea" />
     </ignored-roots>
     <MESSAGE value=" Ignorar configuración de IDE (.idea) y evitar warnings de CRLF" />
-    <option name="LAST_COMMIT_MESSAGE" value="Estructura inicial del proyecto y configuración básica de Java y Tomcat" />
+    <MESSAGE value="feat: Uso de ramas para separar el desarrollo de la versión principal" />
+    <MESSAGE value="feat: Uso de ramas para separar el desarrollo de la versión principal" />
+    <MESSAGE value="feat: crear rama dev para desarrollo de nuevas funcionalidades" />
+    <MESSAGE value=" chore: marcar archivos generados en .gitattributes" />
+    <MESSAGE value="docs: añadir diagrama ER de la base de datos" />
+    <MESSAGE value="feat: añadir footer común a todas las JSPs" />
+    <MESSAGE value="Incluir footer en la pagina principal index.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Incluir footer en la pagina principal index.jsp" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gestionEmpleados$Tomcat_10_1_401.ic" NAME="Tomcat 10.1.401 Coverage Results" MODIFIED="1745408232543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

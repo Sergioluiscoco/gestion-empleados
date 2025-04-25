@@ -75,7 +75,7 @@
   <span id="toastMensaje"></span>
   <button id="cerrarToast">&times;</button>
 </div>
-
+  <jsp:include page="footer/footer.jsp" />
 <script>
   // Filtro por nombre (DOM)
   document.getElementById("searchInput").addEventListener("keyup", function () {

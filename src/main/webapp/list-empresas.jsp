@@ -65,6 +65,7 @@
       }
     %>
   </table>
+  <jsp:include page="footer/footer.jsp" />
 
 <div id="toast" class="toast">
   <span id="toastMensaje"></span>

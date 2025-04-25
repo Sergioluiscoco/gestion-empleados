@@ -40,9 +40,9 @@
         <a href="empleados?action=list" class="button">Ver Empleados</a>
         <a href="empleados?action=new" class="button">Crear Empleado</a>
     </div>
-</div>
+</div
 <%-- incluir el footer común --%>
-<jsp:include page="/WEB-INF/includes/footer.jsp" />
+<jsp:include page="footer/footer.jsp" />
 <script>
     // Script de modo claro/oscuro
     const toggleBtn = document.getElementById("toggleTheme");
