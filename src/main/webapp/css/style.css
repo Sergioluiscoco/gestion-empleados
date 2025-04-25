@@ -422,6 +422,25 @@ body.back-button:hover {
 }
 
 
+/* Estilo del footer*/
+
+.app-footer {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9rem;
+    color: var(--text);
+    background-color: var(--white);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+}
+
+/* Modo oscuro */
+body.dark-mode .app-footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    border-top-color: #444;
+}
+
 /* Toast */
 
 
