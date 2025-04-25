@@ -1,0 +1,15 @@
+
+# Archivos de IDE (IntelliJ)
+.idea/** linguist-generated=true
+*.iml    linguist-generated=true
+
+# Wrapper de Maven
+mvnw     linguist-generated=true
+mvnw.cmd linguist-generated=true
+
+# Carpetas y ficheros de build
+target/** linguist-generated=true
+
+# Documentación y diagramas
+docs/**    linguist-generated=true
+video/**   linguist-generated=true
