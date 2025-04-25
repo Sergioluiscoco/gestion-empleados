@@ -20,7 +20,6 @@
 
   <div class="container">
   <h1>Listado de Empresas</h1>
-  </div>
 
   <div class="actions">
     <button type="button" onclick="window.history.back()" class="back-button">
@@ -65,13 +64,12 @@
       }
     %>
   </table>
-  <jsp:include page="footer/footer.jsp" />
-
+</div>
 <div id="toast" class="toast">
   <span id="toastMensaje"></span>
   <button id="cerrarToast">&times;</button>
 </div>
-
+<jsp:include page="footer/footer.jsp" />
 <script>
   // Filtro por nombre (DOM)
   document.getElementById("searchInput").addEventListener("keyup", function () {
